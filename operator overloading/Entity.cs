@@ -59,5 +59,9 @@ namespace operator_overloading
                 return true;
             else return false;
         }
+        public static implicit operator bool(Entity a)
+        {
+            return false;
+        }
     }
 }

@@ -18,11 +18,20 @@ namespace operator_overloading
             entity_one += 1;
             entity_one++;
 
+            ++entity_two;
+            Console.WriteLine(entity_two.Id);
+
             entity_one[0] = -1;
             Console.WriteLine(entity_one[0]);
 
             Console.WriteLine(entity_one.Id + " " + entity_two.Id);
             Console.WriteLine(entity_one > entity_two);
+
+            Console.WriteLine();
+            if (entity_one)
+                Console.WriteLine(true);
+            else Console.WriteLine(false);
+
         }
     }
 }
